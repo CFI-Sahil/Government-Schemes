@@ -65,7 +65,8 @@ body {
 
     /* about section */
     #about-us {
-        height: 135%;
+    min-height: auto;
+    padding-bottom: 2rem;
     }
 
     .about-section {
@@ -99,7 +100,6 @@ body {
 
     .about-desc {
         max-width: 900px;
-        margin: 0 auto 20px;
         padding: 15px;
         border-radius: 8px;
         font-size: 1rem;
@@ -132,6 +132,8 @@ body {
     }
 
     .footer-bottom {
+        /* position: relative;
+        bottom: 0; */
         text-align: center;
         padding: 10px 0;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -170,21 +172,9 @@ body {
     }
 }
 
-@media(min-width:375px) {
-    #about-us {
-        height: 116vh;
-    }
-}
-
-@media(min-width:425px) {
-    #about-us {
-        height: 108vh;
-    }
-}
-
 @media(min-width:768px) {
-    #about-us {
-        height: 86vh;
+    #about-us{
+        height: 85%;
     }
 }
 
@@ -214,10 +204,15 @@ body {
         opacity: 1;
         transform: scaleX(1);
     }
-
-    #about-us {
-        height: 84.5%;
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+    #about-us{
+        height: 83%;
+    }
+
 }
 
 @media(min-width:1440px) {
@@ -239,17 +234,17 @@ body {
         width: 70%;
     }
 
-    #about-us {
-        height: 83.5%;
+     #about-us{
+        height: 82%;
     }
+
 }
 
 @media(min-width:1800px) {
     nav {
         padding: .5rem 32rem;
     }
-
-    #about-us {
+        #about-us {
         height: 86.5%;
     }
 }
