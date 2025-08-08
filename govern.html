@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="govern.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="./govern.png">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="main">
+            <h1>Government Schemes</h1>
+        </div>
+
+        <div class="app-container">
+            <div class="flex">
+                <input type="text" id="searchInput" placeholder="Search schemes..." class="search-input" />
+            </div>
+            <!-- Search + Filter -->
+            <div class="controls">
+                <button class="filter-btn active" data-filter="All">All</button>
+                <button class="filter-btn" data-filter="Women">Women</button>
+                <button class="filter-btn" data-filter="Senior Citizens">Senior Citizens</button>
+                <button class="filter-btn" data-filter="Students">Students</button>
+            </div>
+
+            <!-- Scheme Cards -->
+            <div class="scheme-grid" id="schemeGrid">
+            </div>
+        </div>
+    </main>
+
+    <script src="govern.js"></script>
+</body>
+
+</html>
