@@ -227,7 +227,7 @@ const schemesData = [
       "Upload necessary documents such as Aadhaar card, bank passbook, and land ownership proof.",
       "Submit the application online or through CSC and track the status via the PM-KISAN portal."
     ],
-    youtubeLink: "https://www.youtube.com/embed/bJSPBq-RN0Y"
+   youtubeLink: "https://www.youtube.com/embed/GLhpIBcUdXY"
   }
 ];
 
@@ -276,4 +276,5 @@ if (scheme) {
   titleEl.textContent = "Scheme Not Found";
   document.querySelector(".app-container").innerHTML += "<p>The scheme you're looking for does not exist.</p>";
 }
+
 
